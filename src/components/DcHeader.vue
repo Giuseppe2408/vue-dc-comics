@@ -81,6 +81,7 @@ export default {
     header {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         
 
         img {
