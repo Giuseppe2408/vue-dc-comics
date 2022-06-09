@@ -1,8 +1,11 @@
 <template>
     <section>
         <div>
-            <img src="../assets/img/jumbotron.jpg" alt="">
+            <button>
+                <span>CURRENT SERIES</span>
+            </button>
         </div>
+        
     </section>
       
 </template>
@@ -18,10 +21,24 @@ export default {
 <style scoped lang="scss">
     section{
         div{
-            img {
-                max-width: 100%;
-                object-fit: contain;
+            width: 100%;
+            height: 1070px;
+            background-image: url(../assets/img/jumbotron.jpg);
+            background-size: contain;
+            button{
+                background-color: blue;
+                border: 1px solid blue;
+                margin-top: 1030px;
+                width: 300px;
+                padding: 30px;
+                align-self: flex-end;
+                span{
+                    color: white;
+                    font-size: 30px;
+                }
             }
         }
+
+        
     }
 </style>

@@ -1,18 +1,17 @@
 <template>
+    <div>
+        <section>
 
-    <section>
+            <MyComic
+            v-for="(comic, i) in comics" :key="i"
+            :details="comic"/>
 
-        <MyComic
-        v-for="(comic, i) in comics" :key="i"
-        :details="comic"/>
-
-        <!-- <div v-for="(comic, i) in comics" :key="i">
-            <a href="">
-                <img :src="comic.thumb" :alt="comic.series">
-                <h4>{{comic.series}}</h4>
-            </a>           
-        </div> -->
-    </section>
+            <button>
+                <span>LOAD MORE</span> 
+            </button>       
+        </section>
+    </div>
+    
       
 </template>
 
@@ -115,5 +114,17 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 100px 0;
+
+        button{
+            background-color: blue;
+            border: 1px solid blue;
+            width: 300px;
+            padding: 30px;
+            align-self: flex-end;
+            span{
+                color: white;
+                font-size: 30px;
+            }
+        }
     }
 </style>

@@ -6,6 +6,8 @@
                 <h4>{{details.series}}</h4>
             </a>           
         </div>
+
+        
       
 </template>
 

@@ -1,125 +1,16 @@
 <template>
 
     <footer>
-      <div>
-        <ul>
-
-          <li>
-            <h1>DC COMICS</h1>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <h1>SHOP</h1>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-          <li>
-            <a href="">Characters</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h1>DC</h1>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-          <li>
-            <a href="">Terms of use</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h1>SITES</h1>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-          <li>
-            <a href="">dc</a>
-          </li>
-
-        </ul>
-      </div> 
+      
+      <MyList/>
 
       <div id="img">
         <img src="../assets/img/dc-logo-bg.png" alt="">
       </div>
+      
+      
+
+      <UnderFooter/>
       
       
     </footer>
@@ -127,8 +18,16 @@
 </template>
 
 <script>
+import UnderFooter from './UnderFooter.vue';
+import MyList from './MyList.vue';
+
 export default {
   name: 'DcFooter',
+
+  components : {
+    UnderFooter,
+    MyList
+  }
   
   }
 </script>
@@ -138,27 +37,12 @@ export default {
     footer {
       background-image: url(../assets/img/footer-bg.jpg);
       background-size: contain;
-      height: 600px;
+      
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      div {
-        display: flex;
-        ul{
-        margin-right: 50px;
-          li{
-            list-style-type: none;
-
-            h1{
-              color: white;
-            }
-            a{
-              text-decoration: none;
-              color: grey;
-            }
-          }
-        }
-      }
+    
       
     }
 </style>
