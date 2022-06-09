@@ -56,6 +56,7 @@ export default {
             background-color: blue;
             height: 400px;
             display: flex;
+            justify-content: center;
             align-items: center;
             ul{
                 display: flex;
@@ -70,6 +71,7 @@ export default {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        padding: 10px;
                     }
                 }
             }

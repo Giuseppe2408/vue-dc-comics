@@ -3,8 +3,9 @@
     <DcHeader/>
 
     <main>
-        <DcContent/>,
-        <DcMerchandise/>,
+        <MyJumbo/>
+        <MyComics/>
+        <DcMerchandise/>
     </main>
 
     <DcFooter/>
@@ -13,17 +14,19 @@
 
 <script>
 import DcHeader from './components/DcHeader.vue';
-import DcContent from './components/DcContent.vue';
+import MyJumbo from './components/MyJumbo.vue';
 import DcMerchandise from './components/DcMerchandise.vue';
 import DcFooter from './components/DcFooter.vue';
+import MyComics from './components/MyComics.vue';
 
 export default {
   name: 'App',
   components: {
     DcHeader,
-    DcContent,
+    MyJumbo,
     DcMerchandise,
-    DcFooter
+    DcFooter,
+    MyComics
   }
 }
 </script>
