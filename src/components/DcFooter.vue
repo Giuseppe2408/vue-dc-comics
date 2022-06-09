@@ -117,7 +117,7 @@
         </ul>
       </div> 
 
-      <div>
+      <div id="img">
         <img src="../assets/img/dc-logo-bg.png" alt="">
       </div>
       
@@ -146,18 +146,18 @@ export default {
         display: flex;
         ul{
         margin-right: 50px;
-        li{
-          list-style-type: none;
+          li{
+            list-style-type: none;
 
-          h1{
-            color: white;
-          }
-          a{
-            text-decoration: none;
-            color: grey;
+            h1{
+              color: white;
+            }
+            a{
+              text-decoration: none;
+              color: grey;
+            }
           }
         }
-      }
       }
       
     }
